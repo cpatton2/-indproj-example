@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: 
+      Date:   
+Products Page 
+      Filename: page 2.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="projhand.css" />
+   <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="project.css" />
+ 
+   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1> <!-- add logo --> 
+            <img src="https://cdn.gomix.com/3c3ad3d9-2fd5-4000-b3b2-540dd7cd3264%2Fcds.png" alt="INFO 301 - Student Project" title="" />
+         </h1>
+      </header>
+<!-- added lists throughout products -->
+      <nav>
+         <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li id="aboutus"><a href="/aboutus.html">About Us</a></li>
+            <li id="current page"><a href="/products.html">Products</a></li>
+            <li><a href="/contact.html">Contact</a></li>  
+        <li id="about"><a href ="/about.html">About</a></li>
+        </ul>
+      </nav>
+        
+      <article>
+
+        <h2><font size="6"> Chocolate Dreams Products </font></h2>
+          <p>  <font size="5">
+            Basic Bars: </font>
+           </p> 
+        
+        <!-- adding checkboxes and price values to each product sold --> 
+        <form >
+          <input type="checkbox" id="item1" value="3.50" />
+          <label for="item1">Milk Chocolate ($3.50)</label><br>
+          <input type="checkbox" id="item2" value="3.50" />
+          <label for="item2">White Chocolate ($3.50)</label><br>
+          <input type="checkbox" id="item3" value="3.50" />
+          <label for="item3">Dark Chocolate ($3.50)</label><br>
+          <input type="checkbox" id="item4" value="4.00" />
+          <label for="item4">Dark Chocolate with Sea Salt ($4.00)</label><br>
+          <input type="checkbox" id="item5" value="4.00" />
+          <label for="item5">Sea Salt and Caramel ($4.00)</label><br>
+          
+        </form>
+        
+     
+     <br> <!-- changed font size to make it stand out among the options --> 
+     <p> <font size="5">
+       Truffles: </font>
+     </p>
+     <p>
+       
+       <form >
+          <input type="checkbox" id="item6" value="3.00" />
+          <label for="item6">Double Chocolate ($3.00)</label><br>
+       <input type="checkbox" id="item7" value="3.00" />
+          <label for="item7">Oreo($3.00)</label><br>
+          <input type="checkbox" id="item8" value="3.00" />
+          <label for="item8">White Chocolate ($3.00)</label><br>
+         <input type="checkbox" id="item9" value="3.00" />
+          <label for="item9">Dark Chocolate Rasberry ($3.00)</label><br>
+         <input type="checkbox" id="item10" value="3.00" />
+          <label for="item10">Caramel Sea Salt ($3.00)</label><br>
+         <input type="checkbox" id="item11" value="3.00" />
+          <label for="item11">Coconut ($3.00)</label><br>
+         <input type="checkbox" id="item12" value="3.00" />
+          <label for="item12">Red Velvet ($3.00)</label><br>
+         
+        </form>
+      
+     </p>
+  <br>
+  <p> <font size="5">
+    Assortments: </font>
+  </p>
+  <p>
+    <form>
+      <input type="checkbox" id="item13" value="5.00" />
+      <label for="item13">Caramel and Nuts ($5.00)</label><br>
+      <input type="checkbox" id="item14" value="5.00" />
+          <label for="item14">Dark Chocolate and Mint ($5.00)</label><br>
+      <input type="checkbox" id="item15" value="6.00" />
+          <label for="item15">Total Variety ($6.00)</label><br>
+      <input type="checkbox" id="item16" value="6.00" />
+          <label for="item16">Everything but Nuts ($6.00)</label><br>
+    <input type="checkbox" id="item17" value="5.00" />
+          <label for="item17">Sweet ($5.00)</label><br>
+      <input type="checkbox" id="item18" value="5.00" />
+          <label for="item18">Pretzel ($5.00)</label><br>
+
+     </form>
+      
+  </p><br>
+        <p> <font size="5">
+          Chocolate Covered... </font>
+        </p>
+        <p>
+          <form>
+            <input type="checkbox" id="item19" value="5.00" />
+          <label for="item19">Pretzels ($5.00)</label><br>
+            <input type="checkbox" id="item20" value="7.00" />
+          <label for="item20">Fruit Combo ($7.00)</label><br>
+            <input type="checkbox" id="item21" value="6.00" />
+          <label for="item21">Strawberries ($6.00)</label><br>
+            <input type="checkbox" id="item22" value="5.00" />
+          <label for="item22">Oreos ($5.00)</label><br>
+            <input type="checkbox" id="item23" value="4.50" />
+          <label for="item23">Raisins ($4.50)</label><br>
+            <input type="checkbox" id="item24" value="5.00" />
+          <label for="item24">Cookies ($5.00)</label><br>
+           <input type="button" id="sButton" value="Submit" />  
+  </form>
+          <div>
+            <p id="total">
+            </p>
+  </div>
+        </p>
+      </article>
+    <!-- need to eventually add pics -->
+      <footer>
+         <p>Chocolate Dreams &bull; Salisbury, Maryland</p>
+      </footer>
+   </div>
+<!-- connecting to the script file --> 
+  <script>
+    // array storing products to display
+    var products = ["Milk Chocolate ($3.50)", "White Chocolate ($3.50)", "Dark Chocolate ($3.50)", "Dark Chocolate with Sea Salt ($4.00)", "Sea Salt and Caramel ($4.50)",
+                    "Double Chocolate ($3.00)", "Oreo ($3.00)", "White Chocolate ($3.00)", "Dark Chocolate Rasberry ($3.00)", "Caramel Sea Salt ($3.00)", "Coconut ($3.00)",
+                    "Red Velvet ($3.00)", "Caramel and Nuts ($5.00)", "Dark Chocolate and Mint ($5.00)", "Total Variety ($6.00)", "Everything but Nuts ($6.00)", "Sweet ($5.00)",
+                    "Pretzel ($5.00)", "Pretzels ($5.00)", "Fruit Combo ($7.00)", "Stawberries ($6.00)", "Oreos ($5.00)", "Raisins ($4.50)", "Cookies ($5.00)"
+                  
+      
+    ];
+    var labels = document.getElementsByTagName("label");
+    function processProducts() {
+      for (var i = 0; i < 24; i++){
+        labels[i].innerHTML = products[i];
+      } 
+    }
+    
+    if (window.addEventListener) {
+      window.addEventListener("load", processProducts, false);
+    } else if (window.attachEvent){
+      window.attachEvent("onload", processProducts);
+    }
+    
+    
+function calcTotal()
+    {
+      var itemTotal = 0;
+      var salesTaxRate = 0.06;
+      var items = document.getElementsByTagName("input");
+      for (var i = 0; i < 24; i++) {
+       if (items[i].checked) {
+          itemTotal += (items[i].value * 1);
+        }  
+      }
+     itemTotal *= 1+ salesTaxRate;
+    document.getElementById("total").innerHTML = "Your order total is $" + itemTotal.toFixed(2);  
+    }
+    
+    
+    var submitButton = document.getElementById("sButton");
+    if (submitButton.addEventListener) {
+      submitButton.addEventListener("click", calcTotal, false);
+    } else if (submitButton.attachEvent) {
+      submitButton.attachEvent("onclick", calcTotal);
+    }
+    
+</script>
+</body>
+</html>
